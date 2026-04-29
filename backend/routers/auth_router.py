@@ -1,7 +1,7 @@
 from fastapi import APIRouter,Depends
 
 from models.user_model import Token, UserLogin,User
-from services.user_service import login_user_service
+from controllers.auth_controller import login_user_service
 from utils.session import get_session
 # presentation Layer
 
